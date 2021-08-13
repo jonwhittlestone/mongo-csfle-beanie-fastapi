@@ -35,4 +35,4 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Run pytest
-        run: poetry run python -m pytest -v.
+        run: poetry run python -m pytest -v
