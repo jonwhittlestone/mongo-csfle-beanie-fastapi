@@ -1,6 +1,8 @@
 # mongo-csfle-beanie-fastapi
 
-A simple FastAPI demonstrating Client-Side Field Level Encryption
+A simple FastAPI app "CustomerDB" demonstrating Client-Side Field Level Encryption.
+
+A **super-admin** app user can view PII, but a **customer-service-agent** cannot.
 
 ## Prerequisites
 
@@ -18,4 +20,5 @@ $ python src/main.py
 
 ```
 $ pytest tests
+$ poetry run python -m pytest -k "mongo_connection"     # run a specfic test
 ```
