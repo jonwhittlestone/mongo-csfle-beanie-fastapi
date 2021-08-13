@@ -21,8 +21,6 @@ $ pytest tests
 
 ## Todos
 
-### Github action to run tests
-
 ### Todos as failing tests/stubs
 
 ### TODO. set up mongo connection in FastAPI settings with env vars
