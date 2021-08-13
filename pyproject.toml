@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "mongo-csfle-beanie-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Jon Whittlestone <dev@howapped.com>"]
+
+[tool.poetry.dependencies]
+autopep8 = "^1.5.7"
+black = "^21.6b0"
+cffi = "^1.14.6"
+cryptography = "^3.4.7"
+dnspython = "^2.1.0"
+entrypoints = "^0.3"
+fastapi = "^0.66.0"
+flake8 = "^3.9.2"
+greenlet = "^1.1.0"
+httpx = "^0.18.2"
+mccabe = "^0.6.1"
+motor = {extras = ["encryption"], version = "^2.4.0"}
+msgpack = "^1.0.2"
+pydantic = {extras = ["email"], version = "^1.8.2"}
+pyflakes = "^2.3.1"
+PyJWT = "^2.1.0"
+pymongo = {version = "3.12"}
+pymongocrypt = "^1.1.1"
+pynvim = "^0.4.3"
+pytest-asyncio = "^0.15.1"
+python = "^3.9"
+python-decouple = "^3.4"
+requests = "^2.26.0"
+uvicorn = "^0.14.0"
+typer = "^0.3.2"
+beanie = "^1.2.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+notebook = "^6.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

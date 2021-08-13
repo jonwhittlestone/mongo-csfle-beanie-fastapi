@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/bin/uvicorn",
+      "console": "integratedTerminal",
+      "args": ["src.main:app", "--port", "8228", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "Tests",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/bin/pytest",
+      "console": "integratedTerminal",
+      "args": ["tests"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#0A2D58",
+    "titleBar.activeBackground": "#0E407C",
+    "titleBar.activeForeground": "#F7FAFE"
+  },
+  "restructuredtext.confPath": "",
+  "python.defaultInterpreterPath": "./.venv/bin/python3.9"
+}
