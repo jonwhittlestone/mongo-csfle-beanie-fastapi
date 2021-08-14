@@ -16,7 +16,8 @@
       "request": "launch",
       "program": "${workspaceFolder}/.venv/bin/pytest",
       "console": "integratedTerminal",
-      "args": ["tests"]
+      "args": ["tests"],
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

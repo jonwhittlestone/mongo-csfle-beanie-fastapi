@@ -1,13 +1,21 @@
 from src import __version__
+import pytest
+
+from src.main import app
+from src.db import mongo
+from src.config import settings
+from bson import ObjectId
 
 
 def test_version():
     assert __version__ == '0.1.0'
 
 
-def test_mongo_connection_with_env_vars():
-    # TODO set up mongo connection in FastAPI settings with env vars
-    assert False
+@pytest.mark.asyncio
+async def test_mongo_connection_with_env_vars():
+    await mongo.start_mongo(encrypted=False)
+    record = await app.mongodb[settings.DB_NAME].find_one({'connection': True})
+    assert isinstance(record.get('_id'), ObjectId)
 
 
 def test_github_action_to_use_secrets_for_integration_test():

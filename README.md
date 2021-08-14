@@ -8,6 +8,13 @@ A **super-admin** app user can view PII, but a **customer-service-agent** cannot
 
 - Poetry
 - Python 3.9
+- Environment variables:
+  ```
+    MONGO_URL=""
+    MONGO_USERNAME=""
+    MONGO_PASSWORD=""
+    MONGO_DATABASE=""
+  ```
 
 ## To run server
 
