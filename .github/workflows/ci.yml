@@ -18,6 +18,11 @@ jobs:
           echo MONGO_DATABASE=${{ secrets.MONGO_DATABASE }} >> .env
           echo MONGO_URL=${{ secrets.MONGO_URL }} >> .env
 
+      - name: Set environment variables
+        run: |
+          echo ::set-env name=MONGO_DATABASE::${{ secrets.MONGO_DATABASE }}
+          echo ::set-env name=MONGO_URL::${{ secrets.MONGO_URL }}
+
       - name: Set up Python 3.9
         uses: actions/setup-python@v1
         with:
