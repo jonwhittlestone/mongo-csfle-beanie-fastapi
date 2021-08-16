@@ -18,23 +18,13 @@ async def test_mongo_connection_with_env_vars():
     assert isinstance(record.get('_id'), ObjectId)
 
 
-def test_github_action_to_use_secrets_for_integration_test():
-    # TODO .Github action to use secret for integration test
-    assert False
-
-
-def test_unencrypted_connection_through_fastapi():
-    # TODO test for unencrypted mongo connection through FastAPI w/settings
+def test_reset_script_for_field_level_enc_and_unenc_documents_in_mongo():
+    # TODO `manage.py` : reset script for field level encrypted and unencrypted documents in a Mongo collection
     assert False
 
 
 def test_integreate_csfle_with_motor_fastapi():
     # TODO integrate CSFLE with motor
-    assert False
-
-
-def test_reset_script_for_field_level_enc_and_unenc_documents_in_mongo():
-    # TODO `manage.py` : reset script for field level encrypted and unencrypted documents in a Mongo collection
     assert False
 
 

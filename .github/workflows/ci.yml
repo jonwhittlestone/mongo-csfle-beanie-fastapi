@@ -13,6 +13,11 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Add environment variables to .env
+        run: |
+          echo MONGO_DATABASE=${{ secrets.MONGO_DATABASE }} >> .env
+          echo MONGO_URL=${{ secrets.MONGO_URL }} >> .env
+
       - name: Set up Python 3.9
         uses: actions/setup-python@v1
         with:
