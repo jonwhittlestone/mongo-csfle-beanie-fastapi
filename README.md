@@ -1,5 +1,7 @@
 # mongo-csfle-beanie-fastapi
 
+![Continuous Integration and Delivery](https://github.com/jonwhittlestone/mongo-csfle-beanie-fastapi/workflows/CI/badge.svg)
+
 A simple FastAPI app "CustomerDB" demonstrating Client-Side Field Level Encryption.
 
 A **super-admin** app user can view PII, but a **customer-service-agent** cannot.

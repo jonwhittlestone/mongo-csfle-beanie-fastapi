@@ -9,7 +9,8 @@ async def start_mongo(encrypted=True):
     try:
         app.mongodb_client = AsyncIOMotorClient(settings.DB_URL)
         app.mongodb = app.mongodb_client[settings.DB_NAME]
+        ic(settings.DB_URL)
         await app.mongodb[settings.DB_NAME].update_one({'connection': True}, {"$set": {'connection': True}}, upsert=True)
-    except Exception:
+    except Exception as e:
         raise Exception(
             'There has been an error. Remember: Environment Variables must be set.')
